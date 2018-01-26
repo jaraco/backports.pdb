@@ -2,3 +2,8 @@
 =====
 
 Fixed compatibility issues in _runmodule on Python 2.7.
+
+1.0
+===
+
+Initial release.
