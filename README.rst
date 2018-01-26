@@ -11,10 +11,10 @@
 
 
 Backport of `pdb from Python 3.7
-<https://docs.python.org/3.7/library/pdb.html>`_:
+<https://docs.python.org/3.7/library/pdb.html>`_::
 
     from backports import pdb
 
-Including support for the ``-m`` option:
+Including support for the ``-m`` option::
 
     $ python -m backports.pdb -m mymodule
