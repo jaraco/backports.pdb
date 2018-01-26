@@ -67,6 +67,8 @@ Debugger commands
 # NOTE: the actual command documentation is collected from docstrings of the
 # commands and is appended to __doc__ after the class has been defined.
 
+from __future__ import print_function
+
 import os
 import re
 import sys
@@ -1599,7 +1601,20 @@ def runctx(statement, globals, locals):
 def runcall(*args, **kwds):
     return Pdb().runcall(*args, **kwds)
 
-def set_trace(*, header=None):
+def set_trace(*args, **kwargs):
+    header = kwargs.pop('header', None)
+    if kwargs:
+        arg = next(iter(kwargs))
+        msg = "set_trace() got an unexpected keyword argument {arg!r}"
+        raise TypeError(msg.format(**locals()))
+    if args:
+        n_args = len(args)
+        were = ['were', 'was'][n_args == 1]
+        msg = (
+            "set_trace() takes 0 positional arguments but "
+            "{n_args} {were} given"
+        )
+        raise TypeError(msg.format(**locals()))
     pdb = Pdb()
     if header is not None:
         pdb.message(header)
