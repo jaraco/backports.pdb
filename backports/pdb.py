@@ -1531,16 +1531,18 @@ class Pdb(bdb.Bdb, cmd.Cmd):
         try:
             mod_name, mod_spec, code = details
             loader = mod_spec.loader
+            package = mod_spec.parent
         except ValueError:
             mod_name, loader, code, filename = details
             mod_spec = None
+            package = '.'.join(mod_name.split('.')[:-1]) or None
         self.mainpyfile = self.canonic(code.co_filename)
         import __main__
         __main__.__dict__.clear()
         __main__.__dict__.update({
             "__name__": "__main__",
             "__file__": self.mainpyfile,
-            "__package__": module_name,
+            "__package__": package,
             "__loader__": loader,
             "__spec__": mod_spec,
             "__builtins__": __builtins__,

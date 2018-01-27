@@ -1,3 +1,8 @@
+1.0.2
+=====
+
+#1: Fixed error in ``__package__`` calculation.
+
 1.0.1
 =====
 
