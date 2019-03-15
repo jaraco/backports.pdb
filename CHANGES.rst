@@ -1,3 +1,8 @@
+1.1
+===
+
+#2: Use ``absolute_import`` to ensure proper imports of stdlib modules.
+
 1.0.2
 =====
 
