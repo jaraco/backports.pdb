@@ -6,6 +6,9 @@
 .. image:: https://img.shields.io/travis/jaraco/backports.pdb/master.svg
    :target: https://travis-ci.org/jaraco/backports.pdb
 
+.. .. image:: https://img.shields.io/appveyor/ci/jaraco/skeleton/master.svg
+..    :target: https://ci.appveyor.com/project/jaraco/skeleton/branch/master
+
 .. image:: https://readthedocs.org/projects/backportspdb/badge/?version=latest
    :target: https://backportspdb.readthedocs.io/en/latest/?badge=latest
 
