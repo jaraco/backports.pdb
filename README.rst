@@ -18,8 +18,8 @@
    :target: https://backportspdb.readthedocs.io/en/latest/?badge=latest
 
 
-Backport of `pdb from Python 3.7
-<https://docs.python.org/3.7/library/pdb.html>`_::
+Backport of `pdb <https://docs.python.org/3/library/pdb.html>`_ from
+later Python versions to older ones::
 
     from backports import pdb
 

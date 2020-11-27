@@ -1,3 +1,10 @@
+v2.0.0
+======
+
+Update to implementation as found in Python 3.9.
+
+Require Python 3.6 or later.
+
 v1.1.1
 ======
 
