@@ -169,12 +169,12 @@ class Pdb(bdb.Bdb, cmd.Cmd):
                 try:
                     with open(os.path.join(envHome, ".pdbrc")) as rcFile:
                         self.rcLines.extend(rcFile)
-                except (IOError, OSError):
+                except OSError:
                     pass
             try:
                 with open(".pdbrc") as rcFile:
                     self.rcLines.extend(rcFile)
-            except (IOError, OSError):
+            except OSError:
                 pass
 
         self.commands = {} # associates a command list to breakpoint numbers
