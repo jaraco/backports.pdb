@@ -1,17 +1,18 @@
 .. image:: https://img.shields.io/pypi/v/backports.pdb.svg
-   :target: https://pypi.org/project/backports.pdb
+   :target: `PyPI link`_
 
 .. image:: https://img.shields.io/pypi/pyversions/backports.pdb.svg
+   :target: `PyPI link`_
 
-.. image:: https://img.shields.io/travis/jaraco/backports.pdb/master.svg
-   :target: https://travis-ci.org/jaraco/backports.pdb
+.. _PyPI link: https://pypi.org/project/backports.pdb
+
+.. image:: https://github.com/jaraco/backports.pdb/workflows/Automated%20Tests/badge.svg
+   :target: https://github.com/jaraco/backports.pdb/actions?query=workflow%3A%22Automated+Tests%22
+   :alt: Automated Tests
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-   :target: https://github.com/ambv/black
+   :target: https://github.com/psf/black
    :alt: Code style: Black
-
-.. .. image:: https://img.shields.io/appveyor/ci/jaraco/skeleton/master.svg
-..    :target: https://ci.appveyor.com/project/jaraco/skeleton/branch/master
 
 .. image:: https://readthedocs.org/projects/backportspdb/badge/?version=latest
    :target: https://backportspdb.readthedocs.io/en/latest/?badge=latest
