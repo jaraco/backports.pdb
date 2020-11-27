@@ -1527,13 +1527,7 @@ class Pdb(bdb.Bdb, cmd.Cmd):
         self._wait_for_mainpyfile = True
         self._user_requested_quit = False
         import runpy
-        details = runpy._get_module_details(module_name)
-        try:
-            mod_name, mod_spec, code = details
-            loader = mod_spec.loader
-        except ValueError:
-            mod_name, loader, code, filename = details
-            mod_spec = None
+        mod_name, mod_spec, code = runpy._get_module_details(module_name)
         self.mainpyfile = self.canonic(code.co_filename)
         import __main__
         __main__.__dict__.clear()
@@ -1541,7 +1535,7 @@ class Pdb(bdb.Bdb, cmd.Cmd):
             "__name__": "__main__",
             "__file__": self.mainpyfile,
             "__package__": module_name,
-            "__loader__": loader,
+            "__loader__": mod_spec.loader,
             "__spec__": mod_spec,
             "__builtins__": __builtins__,
         })
