@@ -67,7 +67,7 @@ Debugger commands
 # NOTE: the actual command documentation is collected from docstrings of the
 # commands and is appended to __doc__ after the class has been defined.
 
-from __future__ import print_function, absolute_import
+from __future__ import print_function
 
 import os
 import re
