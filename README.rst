@@ -6,9 +6,9 @@
 
 .. _PyPI link: https://pypi.org/project/backports.pdb
 
-.. image:: https://github.com/jaraco/backports.pdb/workflows/Automated%20Tests/badge.svg
-   :target: https://github.com/jaraco/backports.pdb/actions?query=workflow%3A%22Automated+Tests%22
-   :alt: Automated Tests
+.. image:: https://github.com/jaraco/backports.pdb/workflows/tests/badge.svg
+   :target: https://github.com/jaraco/backports.pdb/actions?query=workflow%3A%22tests%22
+   :alt: tests
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/psf/black
@@ -17,6 +17,8 @@
 .. .. image:: https://readthedocs.org/projects/skeleton/badge/?version=latest
 ..    :target: https://skeleton.readthedocs.io/en/latest/?badge=latest
 
+.. image:: https://img.shields.io/badge/skeleton-2022-informational
+   :target: https://blog.jaraco.com/skeleton
 
 Backport of `pdb <https://docs.python.org/3/library/pdb.html>`_ from
 later Python versions to older ones::
