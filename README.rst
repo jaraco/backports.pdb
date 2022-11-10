@@ -1,10 +1,7 @@
 .. image:: https://img.shields.io/pypi/v/backports.pdb.svg
-   :target: `PyPI link`_
+   :target: https://pypi.org/project/backports.pdb
 
 .. image:: https://img.shields.io/pypi/pyversions/backports.pdb.svg
-   :target: `PyPI link`_
-
-.. _PyPI link: https://pypi.org/project/backports.pdb
 
 .. image:: https://github.com/jaraco/backports.pdb/workflows/tests/badge.svg
    :target: https://github.com/jaraco/backports.pdb/actions?query=workflow%3A%22tests%22
