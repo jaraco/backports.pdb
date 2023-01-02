@@ -7,12 +7,6 @@ Welcome to |project| documentation!
    history
 
 
-.. automodule:: skeleton
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
 Indices and tables
 ==================
 
