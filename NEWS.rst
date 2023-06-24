@@ -1,3 +1,13 @@
+v2.2.0
+======
+
+Features
+--------
+
+- Require Python 3.8 or later.
+- Update to implementation as found in Python 3.12.
+
+
 v2.1.0
 ======
 
