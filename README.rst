@@ -3,7 +3,7 @@
 
 .. image:: https://img.shields.io/pypi/pyversions/backports.pdb.svg
 
-.. image:: https://github.com/jaraco/backports.pdb/workflows/tests/badge.svg
+.. image:: https://github.com/jaraco/backports.pdb/actions/workflows/main.yml/badge.svg
    :target: https://github.com/jaraco/backports.pdb/actions?query=workflow%3A%22tests%22
    :alt: tests
 
